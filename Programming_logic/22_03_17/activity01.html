@@ -1,0 +1,43 @@
+
+<!--Create a program that receive three grades from 0 to 100, calculate de mean,
+if it's bigger or equal to 70, print "Approved", else print "Disapproved".
+Also inform what is the concept following this rules:
+0 to 49 concept D, 50 to 69 concept C, 70 to 89 concept B and 90 to 100 concept A.-->
+
+<meta charset="UTF-8">
+<script>
+
+    let n1 = parseFloat(prompt('Submit grade 1'));
+    let n2 = parseFloat(prompt('Submit grade 2'));
+    let n3 = parseFloat(prompt('Submit grade 3'));
+
+    let mean = (n1 + n2 + n3) / 3;
+
+    if (mean >= 70) {
+        console.log('Approved');
+    } else {
+        console.log('Disapproved');
+    }
+
+    // Concept A = 90 - 100
+    // Concept B = 70 - 89
+    // Concept C = 50 - 69
+    // Concept D = 0 - 49
+
+    if (mean >= 90) {
+        console.log('Concept A');
+    }
+
+    if (mean >= 70 && mean <=89) {
+    console.log('Concept B');
+    }
+
+    if (mean >= 50 && mean <=69) {
+        console.log('Concept C');
+    }
+
+    if (mean <= 49) {
+        console.log('Concept D'); 
+    }
+
+</script>
