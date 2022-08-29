@@ -1,0 +1,34 @@
+
+<!--The company SuperTech it's struggling to calculate the net value that the collaborators will receive.
+Create a program to calculate the net value, consider:
+    a) Salarys of US$1.500,00 to US$1.999,99 will have 10% discount in taxes;
+    b) Salarys of US$2.000,00 to US$2.499,99 will have 15% discount in taxes;
+    c) Salarys above US$2.500,00 will have 18% discount in taxes;-->
+
+<meta charset="UTF-8">
+<script>
+
+    let salary = parseFloat(prompt('Enter the salary:'));
+
+    if (salary >= 1500.00 && salary <= 1999.99) {
+        let discount = 10 / 100;
+        let discountValue = salary * discount;
+        let netSalary = salary - discountValue;
+        console.log('Net salary US$' + netSalary + '\n10% discount in taxes');
+    }
+    
+    if (salary >= 2000.00 && salary <= 2499.99) {
+        let discount = 15 / 100;
+        let discountValue = salary * discount;
+        let netSalary = salary - discountValue;
+        console.log('Net salary US$' + netSalary + '\n15% discount in taxes');
+    }
+
+    if (salary >= 2500.00) {
+        let discount = 18 / 100;
+        let discountValue = salary * discount;
+        let netSalary = salary - discountValue;
+        console.log('Net salary US$' + netSalary + '\n18% discount in taxes');
+    }
+    
+</script>

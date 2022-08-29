@@ -1,0 +1,48 @@
+
+<!--Create a program to calculate a discount according to the form of payment. Following the steps:
+    a. Request the total purchase value;
+    b. Request the form of payment, with the following options:
+        1) Cash;
+        2) Debit card;
+        3) Credit card;
+        If selected option 1 or 2, give 5% discount.
+    c. Print the purchase value, the discount, the form of payment and the total to pay.-->
+
+<meta charset="UTF-8">
+<script>
+
+    let purchaseValue = parseFloat(prompt('Enter the purchase value'));
+    let payment = prompt(
+    `What will be the form of payment?\n
+    Enter the number:\n
+    1 - Cash;\n
+    2 - Debit card;\n
+    3 - Credit card;`
+    );
+
+    let discount = (5 / 100);
+    let discountValue = purchaseValue * discount;
+    let totalValue = purchaseValue - discountValue;
+
+    if (payment == 1) {
+        console.log('Purchase amount: US$' + purchaseValue);
+        console.log('Discount: 5%');
+        console.log('Cash');
+        console.log('Total amount US$' + totalValue);
+    }
+
+    if (payment == 2) {
+        console.log('Purchase amount: US$' + purchaseValue);
+        console.log('Discount: 5%');
+        console.log('Debit card');
+        console.log('Total amount US$' + totalValue);
+    }
+
+    if (payment == 3) {
+        console.log('Purchase amount: US$' + purchaseValue);
+        console.log('No discount');
+        console.log('Credit card');
+        console.log('Total amount US$' + purchaseValue);
+    }
+
+</script>
