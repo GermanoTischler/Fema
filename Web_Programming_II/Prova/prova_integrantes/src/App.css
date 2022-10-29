@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+}
+
+#image {
+  max-height: 400px;
+}
+
+#nome {
+  font-family: 'Poppins', sans-serif;
+}
+
+#p {
+  font-family: 'Vollkorn', serif;
+}
