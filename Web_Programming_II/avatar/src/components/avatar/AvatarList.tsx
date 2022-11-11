@@ -5,9 +5,9 @@ export function AvatarList () {
 
     return (
         <>
-            <h1>Olá Avatar</h1>
+            <h1>Hello Avatar</h1>
 
-            <Link to={'/avatar/cadastro'}>Cadastrar</Link>
+            <Link to={'/avatar/registry'}>Register</Link>
         </>
     )
 }

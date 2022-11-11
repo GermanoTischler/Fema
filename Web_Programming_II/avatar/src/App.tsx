@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
 import './App.css';
-import { AvatarCadastro } from './components/avatar/AvatarCadastro';
+import { AvatarRegistry } from './components/avatar/AvatarRegistry';
 import { AvatarList } from './components/avatar/AvatarList';
 import { Home } from './components/home/Home'
 
@@ -17,7 +17,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/avatar" element={<AvatarList />} />
-        <Route path="/avatar/cadastro" element={<AvatarCadastro />} />
+        <Route path="/avatar/registry" element={<AvatarRegistry />} />
       </Routes>
 
     </>
