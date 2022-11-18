@@ -9,7 +9,7 @@ export class AvatarService {
 
     static list: Avatar[] = [];
 
-    static salvar(avatar: Avatar) {
+    static save(avatar: Avatar) {
         if (avatar.id) {
             let index = AvatarService.list.findIndex(a => a.id == avatar.id);
             AvatarService.list[index].name = avatar.name
@@ -19,4 +19,8 @@ export class AvatarService {
             AvatarService.list.push(avatar);
         }
     }
+
+    static searchById(id: string): Avatar | undefined {
+        return this.list.find(avatar => avatar.id == id);
+    } 
 }
