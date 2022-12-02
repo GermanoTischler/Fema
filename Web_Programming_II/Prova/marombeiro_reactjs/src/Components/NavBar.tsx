@@ -14,7 +14,7 @@ export function NavBar() {
                 <Link to={'/'}><img src={require('../Img/dumbbells.png')} /></Link>
                 <Link to={'/'}>Home</Link>
                 <Link to={'/treinos'}>Treinos</Link>
-                <Link to={'/cadastrar'}><div id='cad_btn'>Cadastrar Exercício</div></Link>
+                <Link to={'/cadastrar'}><div id='cad_btn'>Cadastrar Treino</div></Link>
                 
             </nav>
 
