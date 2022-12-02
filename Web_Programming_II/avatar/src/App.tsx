@@ -8,6 +8,7 @@ import { Home } from './components/home/Home'
 export default function App() {
   return (
     <>
+      <h1>Hello Avatar</h1>
 
       <ul>
         <li> <Link to={'/'}>Home</Link> </li>
@@ -18,8 +19,8 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/avatar" element={<AvatarList />} />
         <Route path="/avatar/registry" element={<AvatarRegistry />} />
+        <Route path="/avatar/registry/:id" element={<AvatarRegistry />} />
       </Routes>
-
     </>
   );
 }
