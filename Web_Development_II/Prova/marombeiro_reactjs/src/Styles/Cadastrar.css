@@ -1,4 +1,12 @@
+.cadastro {
+    width: 450px;
+    margin: 0 auto;
+    padding: .6em;
+}
 
+.cadastro h1 {
+    margin-bottom: .7em;
+}
 
 form {
     display: flex;
