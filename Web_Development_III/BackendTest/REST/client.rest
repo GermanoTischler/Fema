@@ -1,0 +1,29 @@
+### Buscar todos ID's
+GET http://localhost:3000/user/
+
+### Buscar ID específico
+GET http://localhost:3000/user/231ed63f-f05a-42f5-b00e-f592ce6a3f95
+
+### Buscar ID inexistente
+GET http://localhost:3000/user/231ed63f-f05a-42f5-b00e-f592ce6a3f
+
+### Inserir informação no banco
+POST http://localhost:3000/user/
+content-type: application/json
+
+{
+    "name": "FEMA",
+    "email": "peepee_poopoo@gmail.com"
+}
+
+### Atualizar um usuário pelo ID no banco
+PUT http://localhost:3000/user/
+content-type: application/json
+
+{
+    "name": "Adriano",
+    "email": "adri_poopoo@gmail.com"
+}
+
+### Deletar um usuário pelo ID no banco
+DELETE http://localhost:3000/user/

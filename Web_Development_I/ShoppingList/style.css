@@ -1,0 +1,20 @@
+body {
+    background-color: antiquewhite;
+}
+
+#formulario {
+    background-color: antiquewhite;
+    
+}
+
+button {
+    color: black;
+}
+
+.item {
+    color: white;
+}
+
+.lista {
+    text-decoration: line-through;
+}

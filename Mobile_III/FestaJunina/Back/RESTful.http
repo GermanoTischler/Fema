@@ -1,0 +1,16 @@
+
+### GET ALL
+GET http://localhost:3000/getAll/
+
+### REGISTER
+POST http://localhost:3000/register/
+content-type: application/json
+
+{
+   "item": "Bolo",
+   "value": 8,
+   "position": 2
+}
+
+### DELETE
+DELETE http://localhost:3000/

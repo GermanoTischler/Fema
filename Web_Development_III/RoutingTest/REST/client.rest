@@ -1,0 +1,56 @@
+### Buscar todos ID's
+GET http://localhost:3000/UserAcc/
+
+### Ver o Extrato de uma conta no banco
+GET http://localhost:3000/UserAcc/statement/
+
+### Ver o Saldo de uma conta no banco
+GET http://localhost:3000/UserAcc/balance/
+
+### Inserir conta de usuário no banco
+POST http://localhost:3000/UserAcc/create/
+content-type: application/json
+
+{
+    "name": "Tinoco",
+    "address": "Mordor", 
+    "zip": "66666-666",
+    "cpf": "123.456.789-10"
+}
+
+### Atualizar conta de usuário pelo ID no banco
+PUT  http://localhost:3000/UserAcc/edit
+content-type: application/json
+
+{   
+    "name": "Tonico",
+    "address": "Shire",
+    "zip": "99999-999",
+    "cpf": "109.876.543-21",
+    "balance": 100
+}
+
+### Efetuar depósito por ID no banco
+PUT  http://localhost:3000/UserAcc/deposit/
+content-type: application/json
+
+{   
+    "operation":[{
+            "type": "DEPOSIT",
+            "value": 100.0
+            }]
+}
+
+### Efetuar saque por ID no banco
+PUT http://localhost:3000/UserAcc/withdraw/
+content-type: application/json
+
+{   
+    "operation":[{
+            "type": "WITHDRAW",
+            "value": 5.0
+            }]
+}
+
+### Deletar um usuário pelo ID no banco
+DELETE http://localhost:3000/UserAcc/delete

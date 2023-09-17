@@ -1,0 +1,27 @@
+body {
+    background-color: white;
+}
+
+#listaDeFilmes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.filme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.filme img {
+    display: flex;
+    height: 300px;
+    width: 200px;
+}
+
+.titulo {
+    color: blue;
+}

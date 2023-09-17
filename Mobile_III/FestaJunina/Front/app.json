@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "FestaJunina",
+    "slug": "FestaJunina",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./src/assets/splash.png",
+      "resizeMode": "cover"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./src/assets/favicon.png"
+    },
+    "androidNavigationBar": {
+      "backgroundColor": "#FFFEE0",
+      "barStyle": "dark-content"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+/* Comentário */
+body {
+    background-color: rgb(209, 234, 205);
+}
+
+table {
+    border-collapse: collapse;
+    width: 25%;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #635b5b67;
+}
+
+th {
+   background-color: #04AA6D;
+   color: white;
+}
+
+#formulario {
+    align-items: center;
+    justify-content: center;
+}

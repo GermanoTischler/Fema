@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Criar uma tela com campo Nome do aluno, nota 1, nota 2 e um botão adicionar
+    Ao ser clicado adicione um item dentro de uma "table". Calcule a média, caso a média
+    seja menor do que 7, deixe o valor da média com a cor vermelha.
+        Fazendo o uso do javascript crie validação:
+            1. O nome do aluno não pode ser vazio.
+            2. As notas devem ser de 0 até 10.
+        Adicional:
+            - Usar o BootsTrap.
+            - Poder editar e excluir.
+            - Poder mover as linhas.
+            - Poder fazer o download das tabelas.-->
+    <title>Atividade para relembrar</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="formulario">
+        <label class="label">Nome do aluno</label> <br/>
+        <input id="nome" type="text" placeholder="Insira o nome do aluno"> <br/>
+
+        <label class="label">Nota 1</label> <br/>
+        <input id="nota1" type="number" placeholder="Insira a nota 1"> <br/>
+
+        <label class="label">Nota 2</label> <br/>
+        <input id="nota2" type="number" placeholder="Insira a nota 2"> <br/> <br/>
+
+        <button id="btn" type="button">Adicionar</button>
+    </div> <br/> <br/>
+    <div id="tabela" overflow-x:auto>
+        <table border="1">
+            <caption>Média dos alunos</caption>
+            <tr>
+                <th>Nome</th>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+                <th>Média</th>
+            </tr>
+        </table>
+    </div>
+        
+    <script src="script.js"></script>
+</body>
+</html>
